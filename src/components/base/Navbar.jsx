@@ -50,7 +50,7 @@ const Navbar = () => {
       <div className="navbar-right">
         <i
           className={`fs-1 btn-dark ${
-            darkMode
+            !darkMode
               ? "bi bi-brightness-high text-warning"
               : hovered
               ? "bi bi-moon-stars-fill text-primary"
