@@ -9,7 +9,7 @@ import Proyectos from "./pages/Proyectos";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       {/* Contenido de cada página */}
       <main className="flex-1">
         <Routes>
