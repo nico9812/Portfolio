@@ -17,6 +17,7 @@ function App() {
           <Route path="/sobre-mi" element={<LayoutWithFooter><SobreMi /></LayoutWithFooter>} />
           <Route path="/skills" element={<LayoutWithFooter><Habilidades /></LayoutWithFooter>} />
           <Route path="/proyectos" element={<LayoutWithFooter><Proyectos /></LayoutWithFooter>} />
+          <Route path="*" element={<LayoutWithoutFooter><Inicio /></LayoutWithoutFooter>} />
         </Routes>
       </main>
     </Router>
