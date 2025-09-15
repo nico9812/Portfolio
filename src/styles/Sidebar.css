@@ -1,0 +1,43 @@
+/* Sidebar.css */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar .icon {
+  color: var(--color-texto);
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.sidebar .icon:hover {
+  transform: scale(1.2);
+  color: var(--color-primario); /* ejemplo: verde WhatsApp, cambia según icono */
+  background-color: var(--color-texto);
+}
+
+/* 📱 Sidebar responsivo */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateY(-10%);
+  }
+
+  .sidebar .icon {
+    font-size: 30px;
+    padding: 5px;
+  }
+}
+

@@ -1,0 +1,97 @@
+/* sobre mi  */
+
+/* Card */
+
+.sobre-mi-container{
+ width: 100%;
+ align-items: center;
+}
+
+.sobre-mi-card {
+  box-shadow: 0px 0px 20px 0px var(--color-primario);
+  padding: 2rem; /* p-4 */
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+/* Título */
+.sobre-mi-card h2 {
+  color: var(--color-primario);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor de texto e imagen */
+.sobre-mi-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Columna de texto */
+.sobre-mi-col-texto {
+  flex: 1 1 60%;
+  padding-right: 140px; 
+}
+
+.sobre-mi-col-texto span {
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
+/* Columna de imagen */
+.sobre-mi-col-imagen {
+  position: absolute;
+  right: -160px;
+  justify-content: center;
+}
+
+.sobre-mi-col-imagen img {
+  width: 367px;
+  height: 466px;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .sobre-mi-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .sobre-mi-col-texto {
+    flex: 1 1 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .sobre-mi-col-imagen {
+    position: static;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sobre-mi-col-imagen img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .sobre-mi-card {
+    padding: 1.5rem;
+  }
+
+  .sobre-mi-card h2 {
+    font-size: 28px;
+  }
+
+  .sobre-mi-col-texto p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}

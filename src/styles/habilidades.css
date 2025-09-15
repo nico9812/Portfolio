@@ -1,0 +1,324 @@
+/* Card */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.habilidad .nombre {
+  opacity: 0;
+}
+
+.habilidades-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#habilidades {
+  text-align: left;
+}
+
+.habilidades-row,
+.habilidades-filtros {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.habilidades-card {
+  box-shadow: 0px 0px 20px 0px var(--color-primario);
+  padding: 2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+/* Título */
+.habilidades-card h2 {
+  color: var(--color-primario);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  animation: pulseH2Shadow 0.8s infinite alternate;
+}
+
+@keyframes pulseH2Shadow {
+  0% {
+    text-shadow: 0 0 0px #00e5ffc7;
+  }
+  100% {
+    text-shadow: 0 0 10px #00E5FF;
+  }
+}
+
+
+/* Skills */
+.habilidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  padding: 0%;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.habilidad .icono {
+  z-index: 1;
+  font-size: 3rem;
+  color: var(--color-texto);
+  transition: transform 0.5s, color 0.3s;
+}
+
+.habilidad .icono svg path{
+  fill: var(--color-texto);
+}
+
+.habilidad .nombre {
+  margin-top: 0.5rem;
+  opacity: 0;
+  color: var(--color-primario);
+  transition: opacity 0.3s;
+  font-weight: bold;
+}
+
+.habilidad:hover .icono {
+  transform: rotateZ(360deg);
+}
+
+/* .habilidad:hover .icono svg {
+  transform: rotateZ(360deg);
+} */
+/* iconos  */
+.habilidad:hover .python svg path{
+  fill: #3776AB;
+}
+.habilidad:hover .django svg path{
+  fill: #092E20;
+}
+.habilidad:hover .flask svg path{
+  fill: #3BABC3;
+}
+.habilidad:hover .php svg path{
+  fill: #777BB4;
+}
+.habilidad:hover .mongo svg path{
+  fill: #47A248;
+}
+.habilidad:hover .apache svg path{
+  fill: #D22128;
+}
+.habilidad:hover .google-sheets svg path{
+  fill: #34A853;
+}
+.habilidad:hover .javascript svg path{
+  fill: #F7DF1E;
+}
+.habilidad:hover .react svg path{
+  fill: #61DAFB;
+}
+.habilidad:hover .git svg path{
+  fill: #F05032;
+}
+.habilidad:hover .github svg path{
+  fill: #181717;
+}
+.habilidad:hover .github svg{
+  background-color: #FFFFFF;
+}
+.habilidad:hover .linux svg path{
+  fill: #FCC624;
+}
+.habilidad:hover .html svg path{
+  fill: #E34F26;
+}
+.habilidad:hover .css svg path{
+  fill: #663399;
+}
+.habilidad:hover .bootstrap svg path{
+  fill: #7952B3;
+}
+.habilidad:hover .mysql svg path{
+  fill: #4479A1;
+}
+.habilidad:hover .docker svg path{
+  fill: #2496ED;
+}
+.habilidad:hover .notion svg path{
+  fill: #000000;
+}
+.habilidad:hover .notion svg {
+  background-color: #FFFFFF;
+}
+.habilidad:hover .figma svg path{
+  fill: #F24E1E;
+}
+.habilidad:hover .drf svg path{
+  fill: #7F2D2D;
+}
+.habilidad:hover .numpy svg path{
+  fill: #013243;
+}
+.habilidad:hover .pandas svg path{
+  fill: #150458;
+}
+.habilidad:hover .jquery svg path{
+  fill: #0769AD;
+}
+.habilidad:hover .redux svg path{
+  fill: #764ABC;
+}
+.habilidad:hover .redux-toolkit svg path{
+  fill: #764ABC;
+}
+
+/* fin iconos  */
+
+
+.habilidad:hover .nombre {
+  opacity: 1;
+}
+
+/* Contenedor de skills */
+.habilidades-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;
+  margin-right: 150px;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Columna de imagen */
+.habilidades-col-imagen {
+  position: absolute;
+  right: -150px;
+  bottom: -20px;
+}
+
+.habilidades-col-imagen img {
+  width: 367px;
+  height: 466px;
+  border-radius: 0.5rem;
+}
+
+/* Filtros */
+.habilidades-filtros {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.habilidades-filtros button {
+  background: transparent;
+  border: 1px solid var(--color-primario);
+  color: var(--color-primario);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.habilidades-filtros .selected {
+  animation: pulseShadow 0.5s infinite alternate;
+}
+
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0 0 5px 0 var(--color-primario);
+  }
+  100% {
+    box-shadow: 0 0 15px 2px var(--color-primario);
+  }
+}
+
+
+.habilidades-filtros button:hover {
+  background: var(--color-primario);
+  color: var(--color-texto);
+}
+
+/* 📱 Responsivo completo para habilidades */
+@media (max-width: 768px) {
+  .habilidades-card {
+    padding: 1.5rem;
+  }
+
+  #habilidades {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .habilidades-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 por fila en móviles */
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    justify-items: center;
+  }
+
+  .habilidad {
+    width: 80px;
+    height: 80px;
+  }
+
+  .habilidad .icono {
+    font-size: 2rem;
+  }
+
+  .habilidad .nombre {
+    font-size: 0.75rem;
+    opacity: 1; /* Mostrar nombres siempre en móviles */
+  }
+
+  .habilidades-col-imagen {
+    position: static;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .habilidades-col-imagen img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  .habilidades-filtros {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .habilidades-filtros button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 0.75rem;
+  }
+}
+
+/* 📱 Pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .habilidades-row {
+    grid-template-columns: repeat(3, 1fr); /* 3 por fila en tablets */
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    justify-items: center;
+  }
+
+  .habilidades-col-imagen {
+    position: static;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .habilidades-col-imagen img {
+    width: 300px;
+    height: auto;
+  }
+}

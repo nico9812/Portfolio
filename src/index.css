@@ -1,0 +1,73 @@
+/* 🎨 Variables globales */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+:root {
+    --color-fondo: #02000D;
+    --color-texto: #ffffff;
+    --color-sidebar-hover: rgba(255, 255, 255, 0.1);
+    --color-bordes: #00E5FF;
+    --color-primario: #00E5FF;
+    --color-navbar-hover-cv: #FF9500;
+    --color-navbar-hover-modo: #FFF600;
+}
+
+/* 🌙 Modo oscuro (se aplica al body con la clase dark-mode) */
+body.light-mode {
+    --color-fondo: #EDF8FF;
+    --color-texto: #1C1C1C;
+    --color-sidebar-hover: rgba(0, 0, 0, 0.1);
+    --color-bordes: #003E69;
+    --color-primario: #0022FF;
+    --color-navbar-hover-cv: #FF9500;
+    --color-navbar-hover-modo: #030064;
+}
+
+
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: 'Jura', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar,
+.inicio,
+.hero,
+.tittle-container,
+.sobre-mi-card,
+.habilidades-card,
+.proyectos-card {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* 📱 Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar,
+  .inicio,
+  .hero,
+  .tittle-container,
+  .sobre-mi-card,
+  .habilidades-card,
+  .proyectos-card {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    padding: 1rem;
+  }
+}
+
+/* 📱 Ajustes para pantallas medianas */
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
