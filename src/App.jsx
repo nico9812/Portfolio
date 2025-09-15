@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import  { LayoutWithoutFooter,LayoutWithFooter } from "./utils/layouts";
 
 // Tus páginas
@@ -9,7 +10,7 @@ import Proyectos from "./pages/Proyectos";
 
 function App() {
   return (
-    <Router basename="/Portfolio">
+    <Router >
       {/* Contenido de cada página */}
       <main className="flex-1">
         <Routes>
