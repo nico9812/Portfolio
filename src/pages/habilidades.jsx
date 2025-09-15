@@ -46,7 +46,7 @@ export default function Habilidades() {
             <div className="habilidades-row">
             {skillsFiltradas.map((skill, i) => (
                 <div className="habilidad" key={i}>
-                  <a href={`/proyectos?filtro=${skill.nombre}`}>
+                  <a href={`#/proyectos?filtro=${skill.nombre}`}>
                     <SvgIcon name={skill.icono} className="icono" />
                   </a>
                   <span className="nombre">{skill.nombre}</span>

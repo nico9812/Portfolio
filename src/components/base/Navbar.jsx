@@ -39,7 +39,7 @@ const Navbar = () => {
                       </defs>
                   </svg>
             </a>
-          <div className="btn-cv">Descargar CV</div>
+          <a className="btn-cv" href="/Portfolio/Curriculum.pdf">Descargar CV</a>
         </div>
         <div className="navbar-center">
           <a href="#/sobre-mi" className="btn-center">Sobre mi</a>
