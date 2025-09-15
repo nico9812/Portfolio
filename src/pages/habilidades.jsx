@@ -56,7 +56,7 @@ export default function Habilidades() {
             </div>
             {/* Imagen de avatar */}
             <div className="habilidades-col-imagen">
-                <img src="#/avatar.png" alt="Nico Avatar" />
+                <img src="/Portfolio/avatar.png" alt="Nico Avatar" />
             </div>
 
             {/* Filtros */}

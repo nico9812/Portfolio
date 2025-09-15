@@ -14,7 +14,7 @@ export default function Inicio() {
 
         <div className="hero-imagen">
             <img
-            src="#/avatar.png"
+            src="/Portfolio/avatar.png"
             alt="Nico Avatar"
             />
         </div>

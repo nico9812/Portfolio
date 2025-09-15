@@ -47,7 +47,7 @@ export default function SobreMi() {
 
             {/* Imagen */}
             <div className="sobre-mi-col-imagen">
-              <img src="#/avatar.png" alt="Nico Avatar" />
+              <img src="/Portfolio/avatar.png" alt="Nico Avatar" />
             </div>
           </div>
         </div>

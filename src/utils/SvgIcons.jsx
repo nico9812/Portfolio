@@ -4,7 +4,7 @@ export default function SvgIcon({ name, className }) {
   const [svg, setSvg] = useState(null);
 
   useEffect(() => {
-    fetch(`#/icons/${name}.svg`)
+    fetch(`/Portfolio/icons/${name}.svg`)
       .then((res) => res.text())
       .then((data) => setSvg(data))
       .catch((err) => console.error(err));
