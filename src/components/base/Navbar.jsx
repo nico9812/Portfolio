@@ -42,9 +42,9 @@ const Navbar = () => {
           <div className="btn-cv">Descargar CV</div>
         </div>
         <div className="navbar-center">
-          <a href="/sobre-mi" className="btn-center">Sobre mi</a>
-          <a href="/skills" className="btn-center">Skills</a>
-          <a href="/proyectos" className="btn-center">Proyectos</a>
+          <a href="/Portfolio/sobre-mi" className="btn-center">Sobre mi</a>
+          <a href="/Portfolio/skills" className="btn-center">Skills</a>
+          <a href="/Portfolio/proyectos" className="btn-center">Proyectos</a>
         </div>
       </nav>
       <div className="navbar-right">
