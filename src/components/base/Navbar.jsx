@@ -14,10 +14,10 @@ const Navbar = () => {
 
     // Aplicar la clase al body o html
     if (darkMode) {
-      document.body.classList.remove("light-mode");
+      document.body.classList.add("light-mode");
       // document.documentElement.classList.add("dark");
     } else {
-      document.body.classList.add("light-mode");
+      document.body.classList.remove("light-mode");
       // document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
