@@ -170,6 +170,10 @@
   fill: #764ABC;
 }
 
+.habilidad:hover .nginx svg path{
+  fill: #009639;
+}
+
 /* fin iconos  */
 
 

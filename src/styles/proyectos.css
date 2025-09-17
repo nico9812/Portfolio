@@ -41,6 +41,8 @@
   cursor: pointer;
   position: relative;
   background: var(--color-fondo);
+  display: flex;             /* 🔑 */
+  flex-direction: column;    /* apila en columna */
 }
 
 .proyecto:hover {
@@ -77,11 +79,11 @@
 
 /* Tecnologías */
 .proyecto-tecnologias {
+  margin-top: auto;   /* 🔑 empuja hacia abajo */
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   flex-wrap: wrap;
-  margin: 0.8rem 0;
 }
 
 .proyecto-tecnologias .tech {

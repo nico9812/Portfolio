@@ -12,6 +12,7 @@ export default function Habilidades() {
         { nombre: "PHP", icono: "php", categoria: "back" },
         { nombre: "Mongo", icono: "mongo", categoria: "back" },
         { nombre: "Apache", icono: "apache", categoria: "back" },
+        { nombre: "Nginx", icono: "nginx", categoria: "back" },
         { nombre: "Google Sheets", icono: "google-sheets", categoria: "otras" },
         { nombre: "JavaScript", icono: "javascript", categoria: "front" },
         { nombre: "React", icono: "react", categoria: "front" },

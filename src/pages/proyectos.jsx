@@ -116,22 +116,35 @@ const proyectosData = [
     tipo: "privado",
   },
   {
-  titulo: "Gestión de Servidores e Infraestructura",
-  descripcion:
-    "Auditoría y mejora de la infraestructura de servidores heredados en la DGISE. Incluyó la revisión de sistemas en PHP con configuraciones básicas y baja seguridad, la propuesta de migración progresiva de Apache a Nginx para optimizar rendimiento y compatibilidad, y el plan de contenedorización con Docker. Se implementó una máquina virtual local que replica las condiciones del servidor de producción, permitiendo pruebas en red interna, y se configuraron accesos simplificados para el equipo mediante registro de IPs y nombres.",
-  tecnologias: [
-    "Apache",
-    "Nginx",
-    "PHP",
-    "Linux",
-    "Docker",
-    "Virtualización",
-    "Git"
-  ],
-  imagen: "/placeholder.png",
-  link: null,
-  tipo: "interno"
-}
+    titulo: "Auditoría y Mejora de Servidores",
+    descripcion:
+      "Revisión y auditoría de servidores heredados en la DGISE, con sistemas en PHP bajo Apache y configuraciones mínimas de seguridad. Se propuso y planificó la migración progresiva a Nginx, permitiendo mejorar rendimiento, compatibilidad y seguridad. El plan contempló la futura contenedorización de los proyectos con Docker para facilitar mantenimiento y despliegues.",
+    tecnologias: [
+      "Apache",
+      "Nginx",
+      "PHP",
+      "Linux",
+      "Docker",
+      "Git"
+    ],
+    imagen: "/placeholder.png",
+    link: null,
+    tipo: "interno"
+  },
+  {
+    titulo: "Infraestructura de Pruebas y Entornos Locales",
+    descripcion:
+      "Diseño e implementación de una máquina virtual que replica las condiciones del servidor de producción, permitiendo pruebas seguras en red interna. Se configuraron accesos para todo el equipo mediante registro de IPs y nombres personalizados en cada computadora, facilitando la colaboración y el desarrollo sin depender del servidor productivo.",
+    tecnologias: [
+      "Linux",
+      "Virtualización",
+      "Docker",
+      "Git"
+    ],
+    imagen: "/placeholder.png",
+    link: null,
+    tipo: "interno"
+  }
 ];
 
 import { useLocation } from "react-router-dom";
