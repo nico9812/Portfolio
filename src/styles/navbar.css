@@ -1,10 +1,22 @@
 /* navar  */
 
 .navbar-container {
+  position: fixed;          /* siempre fijo arriba */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;            /* arriba de todo */
   display: flex;
   align-items: center;
-  justify-content: center; /* mantiene el navbar en el centro */
-  margin-top: 20px;
+  justify-content: center;  /* mantiene el navbar en el centro */
+  background: var(--color-fondo); 
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+/* agrega espacio para que el contenido no quede tapado */
+body {
+  padding-top: 100px; /
 }
 
 .navstart,
@@ -25,44 +37,45 @@
 }
 
 .navbar-left {
-    margin-left: 0; /* ya está alineado al inicio con justify-content */
-    display: flex;                 /* flex */
-    flex-direction: row;        /* flex-col */
-    align-items: center;
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.btn-dark{
+.btn-dark {
   color: var(--color-texto) !important;
   cursor: pointer;
 }
 
-.btn-dark:hover{
+.btn-dark:hover {
   color: var(--color-navbar-hover-modo) !important;
 }
 
-.btn-cv{
+.btn-cv {
   all: unset;
   margin-left: 20px;
   border: none;
   cursor: pointer;
   font-size: 24px;
 }
-.btn-center{
+
+.btn-center {
   all: unset;
   cursor: pointer;
   font-size: 24px;
   margin-right: 40px;
 }
 
-.btn-cv:hover{
+.btn-cv:hover {
   color: #FF9500;
 }
 
-.btn-center:hover{
+.btn-center:hover {
   color: var(--color-primario);
 }
 
-.nav-logo{
+.nav-logo {
   width: 30px;
   height: 30px;
   fill: var(--color-texto) !important;
@@ -70,10 +83,13 @@
 
 /* 📱 Navbar responsive */
 @media (max-width: 768px) {
+  body {
+    padding-top: 150px; /
+  }
   .navbar-container {
     flex-direction: column;
     align-items: stretch;
-    margin-top: 10px;
+    padding: 15px 0; /* ya no margin-top porque está fijo */
   }
 
   .navbar {
@@ -90,7 +106,7 @@
     margin: 10px 0;
   }
 
-  .navbar-right{
+  .navbar-right {
     position: absolute;
     right: 10px;
     top: 10px;
