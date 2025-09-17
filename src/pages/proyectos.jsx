@@ -115,6 +115,23 @@ const proyectosData = [
     link: null,
     tipo: "privado",
   },
+  {
+  titulo: "Gestión de Servidores e Infraestructura",
+  descripcion:
+    "Auditoría y mejora de la infraestructura de servidores heredados en la DGISE. Incluyó la revisión de sistemas en PHP con configuraciones básicas y baja seguridad, la propuesta de migración progresiva de Apache a Nginx para optimizar rendimiento y compatibilidad, y el plan de contenedorización con Docker. Se implementó una máquina virtual local que replica las condiciones del servidor de producción, permitiendo pruebas en red interna, y se configuraron accesos simplificados para el equipo mediante registro de IPs y nombres.",
+  tecnologias: [
+    "Apache",
+    "Nginx",
+    "PHP",
+    "Linux",
+    "Docker",
+    "Virtualización",
+    "Git"
+  ],
+  imagen: "/placeholder.png",
+  link: null,
+  tipo: "interno"
+}
 ];
 
 import { useLocation } from "react-router-dom";
